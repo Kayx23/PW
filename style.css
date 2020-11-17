@@ -50,6 +50,24 @@ h2 {
     font-family: 'Carter One', cursive;
 }
 
+/* rgb effect on hover */
+h1, h2 {
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    background-image: linear-gradient(
+          to right,
+          rgb(135, 95, 230),
+          rgb(134, 209, 250) 50%,
+          rgb(58, 58, 58) 50%);
+          background-size: 200% 100%;
+          background-position: 100%;
+  }
+  
+  h1:hover, h2:hover {
+    transition: all 0.8s cubic-bezier(0, 0, 0.28, 1);
+    background-position: 0%;
+  }
+
 p{
     font-size: 1.5rem;
 }
