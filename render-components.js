@@ -19,7 +19,9 @@ function renderAbout() {
 }
 
 function renderProject() {
-    rightPane.innerHTML = "<p>PROJECTS GO HERE</p>"
+    rightPane.innerHTML = `
+    <project-card></project-card>
+    `
 }
 
 function renderREST() {
